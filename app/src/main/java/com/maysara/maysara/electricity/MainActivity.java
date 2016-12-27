@@ -15,6 +15,7 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -50,6 +51,22 @@ public class MainActivity extends AppCompatActivity {
                 }
                 setState(!getState());
                 animate();
+                if (getState())
+                    Toast.makeText(MainActivity.this, "تم ضبط المنبه", Toast.LENGTH_SHORT).show();
+                else
+                    Toast.makeText(MainActivity.this, "تم ايقاف المنبه", Toast.LENGTH_SHORT).show();
+
+                new Thread(new Runnable() {
+                    @Override
+                    public void run() {
+                        try {
+                            Thread.sleep(1500);
+                            finish();
+                        } catch (InterruptedException e) {
+                            e.printStackTrace();
+                        }
+                    }
+                }).start();
 
             }
         });
