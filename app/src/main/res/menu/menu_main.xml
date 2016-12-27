@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.maysara.electricity_gaza.MainActivity">
+    <item
+        android:id="@+id/how_to_use"
+        android:orderInCategory="10"
+        android:title="@string/how_to_use"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_info_white_36dp"
+        />
+</menu>
+

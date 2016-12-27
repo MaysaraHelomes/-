@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Electricity</string>
+    <string name="action_settings">Settings</string>
+    <string name="how_to_use">how to use</string>
+    <string name="alarm_on">المنبه مفعل</string>
+    <string name="alarm_off">المنبه معطل</string>
+    <string name="hint">حط جوالك بالشاحن ولما تيجي الكهربا بيرن</string>
+</resources>
