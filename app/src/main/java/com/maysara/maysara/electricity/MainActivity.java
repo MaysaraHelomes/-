@@ -48,18 +48,16 @@ public class MainActivity extends AppCompatActivity {
                 if (!getState()){
                     Snackbar.make(view, getResources().getText(R.string.hint), Snackbar.LENGTH_LONG).show();
                 }
+                else
+                    Snackbar.make(view, getResources().getText(R.string.hint2), Snackbar.LENGTH_LONG).show();
+
                 setState(!getState());
                 animate();
-                if (getState())
-                    Toast.makeText(MainActivity.this, "تم ضبط المنبه", Toast.LENGTH_SHORT).show();
-                else
-                    Toast.makeText(MainActivity.this, "تم ايقاف المنبه", Toast.LENGTH_SHORT).show();
-
                 new Thread(new Runnable() {
                     @Override
                     public void run() {
                         try {
-                            Thread.sleep(1500);
+                            Thread.sleep(1700);
                             finish();
                         } catch (InterruptedException e) {
                             e.printStackTrace();
