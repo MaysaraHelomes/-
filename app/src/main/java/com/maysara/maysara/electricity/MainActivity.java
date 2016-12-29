@@ -15,7 +15,6 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -45,9 +44,9 @@ public class MainActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (!getState()){
+
+                if (!getState())
                     Snackbar.make(view, getResources().getText(R.string.hint), Snackbar.LENGTH_LONG).show();
-                }
                 else
                     Snackbar.make(view, getResources().getText(R.string.hint2), Snackbar.LENGTH_LONG).show();
 
@@ -64,11 +63,8 @@ public class MainActivity extends AppCompatActivity {
                         }
                     }
                 }).start();
-
             }
         });
-
-
 
     }
 
@@ -91,7 +87,6 @@ public class MainActivity extends AppCompatActivity {
         editor.putBoolean("state",s);
         editor.apply();
         editor.commit();
-
     }
 
     public  boolean getState()
@@ -143,10 +138,8 @@ public class MainActivity extends AppCompatActivity {
             });
             colorAnimation.start();
         }
-
-
-
     }
+
     private void showMessageInfoDialog()
     {
         Dialog dialog = new Dialog(this);

@@ -4,7 +4,9 @@
     <string name="how_to_use">how to use</string>
     <string name="alarm_on">المنبه مفعل</string>
     <string name="alarm_off">المنبه معطل</string>
-    <string name="hint">تم ضبط المنبه , أوصل الهاتف بالشاحن</string>
-    <string name="hint2">تم ايقاف المنبه</string>
+    <string name="hint">تم ضبط المنبه , اوصل الهاتف بالشاحن</string>
+    <string name="hint2">تم إيقاف المنبه</string>
+    <string name="electricityOn">الكهربا إجت</string>
+    <string name="stopAlarm">أوقف المنبه</string>
 
 </resources>

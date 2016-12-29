@@ -9,7 +9,7 @@ import android.content.SharedPreferences;
  * Created by maysara on 12/27/16.
  */
 
-public class Reciver extends BroadcastReceiver {
+public class startAlarmReceiver extends BroadcastReceiver {
 
     SharedPreferences sharedPreferences;
     SharedPreferences.Editor editor ;
@@ -18,14 +18,9 @@ public class Reciver extends BroadcastReceiver {
         sharedPreferences = context.getSharedPreferences("alarmstate",Context.MODE_PRIVATE);
 
         if (getState())
-        {
-            setState(!getState());
             context.startService( new Intent(context, AlarmService.class));
-        }
 
     }
-
-
 
     private  boolean getState()
     {
