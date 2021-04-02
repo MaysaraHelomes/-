@@ -1,5 +1,4 @@
 # electricity-alarm
-when the electricity went out , plug your phone into the charger ,
-and the app will alarm you when the electricity is on :)
+An mobile application I made when I was in the first year of university to notify me when the electricity is back because we used to have electricity problems in my country.
 ## google play link
 https://play.google.com/store/apps/details?id=com.maysara.maysara.electricity
